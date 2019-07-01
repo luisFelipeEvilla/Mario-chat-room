@@ -24,4 +24,8 @@ io.on('connection', (socket) => {
         debug('a message has arrived');
         io.sockets.emit('chat', data)
     })
+
+    socket.on('typing', (handle) => {
+        socket.broadcast.emit('typing', handle)
+    })
 })
