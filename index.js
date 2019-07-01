@@ -19,4 +19,9 @@ const io = socket(server)
 
 io.on('connection', (socket) => {
     debug(`Has been stablished a connection to a socket with ID: ${chalk.green(socket.id)}`)
+
+    socket.on('chat', (data) => {
+        debug('a message has arrived');
+        io.sockets.emit('chat', data)
+    })
 })
