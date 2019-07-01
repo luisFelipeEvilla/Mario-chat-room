@@ -1,0 +1,33 @@
+{
+  "name": "mario-chat-room",
+  "version": "1.0.0",
+  "description": "A live chat room created with websocket",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisFelipeEvilla/Mario-chat-room.git"
+  },
+  "keywords": [
+    "webSocket",
+    "chat",
+    "room",
+    "chat-room"
+  ],
+  "author": "Luis Felipe Evilla <www.github.com/luisFelipeEvilla>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisFelipeEvilla/Mario-chat-room/issues"
+  },
+  "homepage": "https://github.com/luisFelipeEvilla/Mario-chat-room#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
